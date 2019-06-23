@@ -17,8 +17,8 @@ from pathlib import Path
 from twilio.rest import Client
 
 # Configuration that will be used by the Mask-RCNN library
-account_sid = 'ACe86da43edb0a15fe3119b548936e2d67'
-auth_token = 'abb6d35eb495241ff955ff65e1da0d66'
+account_sid = '********************'
+auth_token = '********************'
 client = Client(account_sid, auth_token)
 
 class MaskRCNNConfig(mrcnn.config.Config):
@@ -230,8 +230,8 @@ class Ui_MainWindow(object):
                         text_message = "Hello, parking spot number "+ str(free_space_slot) + " avaliable"
                         message = client.messages.create(
                             body= text_message,
-                            from_='+14023474589',
-                            to='+628988720006'
+                            from_='********************',
+                            to='********************'
                         )
 
                 # Show the frame of video on the screen
